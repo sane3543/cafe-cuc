@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>GUIDE | Cafe CUC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- デザイン切り替え -->
+  <div class="design-switcher" aria-label="デザイン切り替え">
+    <span class="design-switcher__label">DESIGN</span>
+
+    <button type="button" data-style="botanical" aria-pressed="false">
+      A｜ナチュラル
+    </button>
+
+    <button type="button" data-style="minimal" aria-pressed="false">
+      B｜モダン
+    </button>
+
+    <button type="button" data-style="vintage" aria-pressed="false">
+      C｜レトロ
+    </button>
+  </div>
+
+  <!-- 情報配置の切り替え -->
+  <div class="layout-switcher" aria-label="情報配置の切り替え">
+    <span class="layout-switcher__label">LAYOUT</span>
+
+    <button type="button" data-layout="flow" aria-pressed="false">
+      A｜順次探索
+    </button>
+
+    <button type="button" data-layout="categories" aria-pressed="false">
+      B｜カテゴリ整理
+    </button>
+
+    <button type="button" data-layout="sidebar" aria-pressed="false">
+      C｜常設ナビ
+    </button>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">☕︎</span>
+      <span>
+        <strong>Cafe CUC</strong>
+        <small>COFFEE · UNWIND · COMFORT</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false">MENU</button>
+
+    <nav class="site-nav">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="access.html">ACCESS</a>
+      <a href="guide.html">GUIDE</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ページタイトル -->
+    <section class="page-hero">
+      <p class="eyebrow">INFORMATION</p>
+      <h1>ご利用ガイド</h1>
+      <p>テイクアウトやポイントカードについてご案内します。</p>
+    </section>
+
+    <!-- 情報配置の切り替え対象 -->
+    <div class="info-page-layout">
+
+      <!-- 目次：カテゴリ整理・常設ナビで表示 -->
+      <aside class="info-page-nav" aria-label="ご利用ガイドの目次">
+        <p class="eyebrow">CONTENTS</p>
+        <nav>
+          <a href="#takeout">テイクアウト</a>
+          <a href="#gift">ギフト</a>
+          <a href="#points">ポイントカード</a>
+          <a href="#services">各種サービス</a>
+          <a href="#faq">よくある質問</a>
+        </nav>
+      </aside>
+
+      <div class="content info-page-content">
+
+        <!-- 1. テイクアウト -->
+        <section class="info-page-section" id="takeout">
+          <p class="info-page-label">01 / TAKEOUT</p>
+          <h2>テイクアウト</h2>
+
+          <div class="info-box">
+            <h3>お持ち帰りできるもの</h3>
+            <p>
+              コーヒー、紅茶、レモネード、サンドイッチ、
+              焼き菓子などをご用意しています。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>ご注文からお渡しまで</h3>
+            <p>
+              店頭カウンターでご注文ください。
+              目安はドリンク約5分、フード約10〜15分です。
+              混雑時は時間がかかる場合があります。
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. ギフト -->
+        <section class="info-page-section" id="gift">
+          <p class="info-page-label">02 / GIFT</p>
+          <h2>ギフト</h2>
+
+          <div class="info-box">
+            <h3>おやつボックス　¥900</h3>
+            <p>その日の焼き菓子を3種類詰め合わせます。</p>
+          </div>
+
+          <div class="info-box">
+            <h3>ギフトボックス　¥1,800</h3>
+            <p>
+              焼き菓子の詰め合わせです。
+              ギフト包装は +¥150。
+              前日までのご予約がおすすめです。
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. ポイントカード -->
+        <section class="info-page-section" id="points">
+          <p class="info-page-label">03 / POINT CARD</p>
+          <h2>CUCポイントカード</h2>
+
+          <div class="info-box">
+            <p class="large-copy">いつもの一杯を、ちょっと特別に。</p>
+
+            <p>
+              お会計500円ごとに1ポイント。
+              10ポイント貯まると、お好きな対象ドリンク1杯をプレゼントします。
+            </p>
+
+            <p>
+              対象ドリンクが600円を超える場合は差額をお支払いください。
+              ポイントの有効期限は最終利用日から1年間です。
+            </p>
+
+            <small>
+              紙カードを紛失した場合、ポイントの再発行は原則できません。
+              他の割引との併用は原則できません。
+            </small>
+          </div>
+        </section>
+
+        <!-- 4. 各種サービス -->
+        <section class="info-page-section" id="services">
+          <p class="info-page-label">04 / SPECIAL SERVICES</p>
+          <h2>ちょっとうれしいサービス</h2>
+
+          <div class="info-box">
+            <h3>モーニング</h3>
+            <p>
+              平日9:00〜11:00。
+              対象ドリンクとはちみつバタートーストのセット。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>ハッピーカフェタイム</h3>
+            <p>平日15:00〜17:00。対象ドリンクが50円引き。</p>
+          </div>
+
+          <div class="info-box">
+            <h3>学生割引</h3>
+            <p>学生証の提示でドリンク50円引き。セットとの併用はできません。</p>
+          </div>
+
+          <div class="info-box">
+            <h3>マイカップ割引</h3>
+            <p>マイカップ持参で30円引き。</p>
+          </div>
+
+          <div class="info-box">
+            <h3>バースデー月</h3>
+            <p>誕生月は対象ケーキが100円引き。</p>
+          </div>
+        </section>
+
+        <!-- 5. よくある質問 -->
+        <section class="info-page-section" id="faq">
+          <p class="info-page-label">05 / FAQ</p>
+          <h2>よくある質問</h2>
+
+          <div class="faq">
+            <details>
+              <summary>一人でも利用できますか？</summary>
+              <p>もちろんです。カウンター席や一人用のテーブルをご利用ください。</p>
+            </details>
+
+            <details>
+              <summary>予約はできますか？</summary>
+              <p>4名以上のグループは電話でご相談いただく設定です。少人数は原則としてご来店順です。</p>
+            </details>
+
+            <details>
+              <summary>Wi-Fiはありますか？</summary>
+              <p>無料Wi-Fiをご利用いただけます。接続情報はレジ付近に掲示しています。</p>
+            </details>
+
+            <details>
+              <summary>コンセントは使えますか？</summary>
+              <p>カウンターの一部席にあります。利用できる席はスタッフにお尋ねください。</p>
+            </details>
+
+            <details>
+              <summary>子ども連れでも利用できますか？</summary>
+              <p>ご利用いただけます。通路やほかのお客様へのご配慮をお願いいたします。</p>
+            </details>
+
+            <details>
+              <summary>アレルギー情報を確認できますか？</summary>
+              <p>原材料についてスタッフにお尋ねください。調理環境などの都合により、アレルギー対応を保証できない場合があります。</p>
+            </details>
+
+            <details>
+              <summary>ペットを連れて入店できますか？</summary>
+              <p>店内へのペット同伴はご遠慮いただく設定です。</p>
+            </details>
+
+            <details>
+              <summary>駐車場はありますか？</summary>
+              <p>専用駐車場はありません。近隣のコインパーキングをご利用ください。</p>
+            </details>
+
+            <details>
+              <summary>営業時間と定休日を教えてください。</summary>
+              <p>平日9:00〜19:00、土日祝10:00〜19:00、毎週水曜日が定休日です。</p>
+            </details>
+
+            <details>
+              <summary>商品が売り切れることはありますか？</summary>
+              <p>手作りのため、ケーキや焼き菓子、季節商品などは売り切れる場合があります。</p>
+            </details>
+          </div>
+
+          <p class="guide-note">
+            ※サービス・料金・営業時間は卒業研究用の架空設定です。
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">Cafe CUC</a>
+    <p>いつもの一日に、ひとさじの余白を。</p>
+
+    <div class="footer-links">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="access.html">ACCESS</a>
+    </div>
+
+    <small>※卒業研究用の架空のカフェです。</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ACCESS | Cafe CUC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- デザイン切り替え -->
+  <div class="design-switcher" aria-label="デザイン切り替え">
+    <span class="design-switcher__label">DESIGN</span>
+    <button type="button" data-style="botanical" aria-pressed="false">A｜ナチュラル</button>
+    <button type="button" data-style="minimal" aria-pressed="false">B｜モダン</button>
+    <button type="button" data-style="vintage" aria-pressed="false">C｜レトロ</button>
+  </div>
+
+  <!-- 情報配置切り替え -->
+  <div class="layout-switcher" aria-label="情報配置の切り替え">
+    <span class="layout-switcher__label">LAYOUT</span>
+    <button type="button" data-layout="flow" aria-pressed="false">A｜順次探索</button>
+    <button type="button" data-layout="categories" aria-pressed="false">B｜カテゴリ整理</button>
+    <button type="button" data-layout="sidebar" aria-pressed="false">C｜常設ナビ</button>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">☕︎</span>
+      <span>
+        <strong>Cafe CUC</strong>
+        <small>COFFEE · UNWIND · COMFORT</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false">MENU</button>
+
+    <nav class="site-nav">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="access.html">ACCESS</a>
+      <a href="guide.html">GUIDE</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">VISIT CUC</p>
+      <h1>アクセス・店舗情報</h1>
+      <p>本八幡駅から徒歩5〜6分。街角の小さなカフェです。</p>
+    </section>
+
+    <!-- 情報配置の切り替え対象 -->
+    <div class="info-page-layout">
+
+      <!-- 配置Cで使う常設ナビ -->
+      <aside class="info-page-nav" aria-label="店舗情報メニュー">
+        <p class="eyebrow">INFORMATION</p>
+        <nav>
+          <a href="#location">所在地</a>
+          <a href="#hours">営業時間</a>
+          <a href="#access-route">アクセス</a>
+          <a href="#seats">座席・設備</a>
+          <a href="#reservation">ご予約について</a>
+          <a href="#payment">お支払い方法</a>
+        </nav>
+      </aside>
+
+      <!-- 店舗情報 -->
+      <div class="content info-page-content">
+
+        <section class="info-page-section" id="location">
+          <p class="info-page-label">01 / LOCATION</p>
+          <h2>所在地</h2>
+          <div class="info-box">
+            <p class="large-copy">
+              千葉県市川市本八幡3丁目12-8<br>
+              CUCテラス 1F
+            </p>
+            <p>本八幡駅から徒歩5〜6分</p>
+            <small>※住所は卒業研究用の架空の設定です。</small>
+          </div>
+        </section>
+
+        <section class="info-page-section" id="hours">
+          <p class="info-page-label">02 / OPENING HOURS</p>
+          <h2>営業時間</h2>
+          <div class="info-box">
+            <p>平日：9:00〜19:00</p>
+            <p>土日祝：10:00〜19:00</p>
+            <p>定休日：毎週水曜日</p>
+          </div>
+        </section>
+
+        <section class="info-page-section" id="access-route">
+          <p class="info-page-label">03 / ACCESS</p>
+          <h2>アクセス</h2>
+
+          <div class="info-box">
+            <h3>JR総武線 本八幡駅</h3>
+            <p>北口から徒歩約6分。</p>
+          </div>
+
+          <div class="info-box">
+            <h3>都営新宿線 本八幡駅</h3>
+            <p>A5出口から徒歩約5分。</p>
+          </div>
+
+          <div class="info-box">
+            <h3>バス・自転車・お車</h3>
+            <p>
+              本八幡駅北口のバス停から徒歩約6分。
+              店舗横に自転車置き場（6台分）があります。
+              専用駐車場はありませんので、
+              近隣のコインパーキングをご利用ください。
+            </p>
+          </div>
+        </section>
+
+        <section class="info-page-section" id="seats">
+          <p class="info-page-label">04 / FACILITIES</p>
+          <h2>座席・設備</h2>
+          <div class="info-box">
+            <p>全28席：カウンター8席、テーブル16席、ソファ4席。</p>
+            <p>
+              一人でのご利用にはカウンター席、
+              友人やご家族とのご利用にはテーブル席がおすすめです。
+            </p>
+            <p>
+              店内は禁煙です。入口に小さな段差があります。
+              お手伝いが必要な場合はスタッフにお声がけください。
+            </p>
+          </div>
+        </section>
+
+        <section class="info-page-section" id="reservation">
+          <p class="info-page-label">05 / RESERVATION</p>
+          <h2>ご予約について</h2>
+          <div class="info-box">
+            <p>
+              4名以上のグループは電話でご相談いただく設定です。
+              少人数は原則としてご来店順です。
+            </p>
+          </div>
+        </section>
+
+        <section class="info-page-section" id="payment">
+          <p class="info-page-label">06 / PAYMENT</p>
+          <h2>お支払い方法</h2>
+          <div class="info-box">
+            <div class="payment-tags">
+              <span class="payment-tag">現金</span>
+              <span class="payment-tag">Visa</span>
+              <span class="payment-tag">Mastercard</span>
+              <span class="payment-tag">JCB</span>
+              <span class="payment-tag">American Express</span>
+              <span class="payment-tag">Suica・PASMO</span>
+              <span class="payment-tag">PayPay</span>
+              <span class="payment-tag">楽天ペイ</span>
+              <span class="payment-tag">d払い</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">Cafe CUC</a>
+    <p>いつもの一日に、ひとさじの余白を。</p>
+    <div class="footer-links">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="guide.html">GUIDE</a>
+    </div>
+    <small>※卒業研究用の架空のカフェです。</small>
+  </footer>
+
+</body>
+</html>

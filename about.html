@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ABOUT | Cafe CUC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- デザイン切り替え -->
+  <div class="design-switcher" aria-label="デザイン切り替え">
+    <span class="design-switcher__label">DESIGN</span>
+
+    <button type="button" data-style="botanical" aria-pressed="false">
+      A｜ナチュラル
+    </button>
+
+    <button type="button" data-style="minimal" aria-pressed="false">
+      B｜モダン
+    </button>
+
+    <button type="button" data-style="vintage" aria-pressed="false">
+      C｜レトロ
+    </button>
+  </div>
+
+  <!-- 情報配置の切り替え -->
+  <div class="layout-switcher" aria-label="情報配置の切り替え">
+    <span class="layout-switcher__label">LAYOUT</span>
+
+    <button type="button" data-layout="flow" aria-pressed="false">
+      A｜順次探索
+    </button>
+
+    <button type="button" data-layout="categories" aria-pressed="false">
+      B｜カテゴリ整理
+    </button>
+
+    <button type="button" data-layout="sidebar" aria-pressed="false">
+      C｜常設ナビ
+    </button>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">☕︎</span>
+      <span>
+        <strong>Cafe CUC</strong>
+        <small>COFFEE · UNWIND · COMFORT</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false">MENU</button>
+
+    <nav class="site-nav">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="access.html">ACCESS</a>
+      <a href="guide.html">GUIDE</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ページタイトル -->
+    <section class="page-hero">
+      <p class="eyebrow">OUR STORY</p>
+      <h1>お店について</h1>
+      <p>毎日の中に、自分らしく過ごせる場所を。</p>
+    </section>
+
+    <!-- 情報配置の切り替え対象 -->
+    <div class="info-page-layout">
+
+      <!-- 目次：B・Cで表示 -->
+      <aside class="info-page-nav" aria-label="お店についての目次">
+        <p class="eyebrow">CONTENTS</p>
+        <nav>
+          <a href="#story">CUCについて</a>
+          <a href="#commitments">5つのこだわり</a>
+          <a href="#space">店内での過ごし方</a>
+          <a href="#facilities">店内設備</a>
+        </nav>
+      </aside>
+
+      <!-- 本文 -->
+      <div class="content info-page-content">
+
+        <!-- 1. CUCについて -->
+        <section class="info-page-section" id="story">
+          <p class="info-page-label">01 / OUR STORY</p>
+
+          <div class="about-logo">
+            <img
+              src="images/logo2.png"
+              alt="Cafe CUCのロゴ"
+              loading="lazy"
+            >
+          </div>
+
+          <p class="eyebrow">WHY CUC?</p>
+          <h2>コーヒーと、ひと息と、心地よさ。</h2>
+
+          <p class="large-copy">Coffee. Unwind. Comfort.</p>
+
+          <p>
+            CUCは「Coffee」「Unwind」「Comfort」の頭文字から生まれた名前です。
+            一杯のコーヒーを楽しみ、忙しい日常から少し離れて、
+            気負わず自分らしく過ごしてほしい。そんな思いを込めています。
+          </p>
+
+          <p>
+            通勤・通学前の朝、友人と過ごす週末、一人で本を読む午後。
+            Cafe CUCは、特別な日だけではなく、
+            いつもの一日に寄り添うカフェを目指しています。
+          </p>
+        </section>
+
+        <!-- 2. 5つのこだわり -->
+        <section class="info-page-section" id="commitments">
+          <p class="info-page-label">02 / OUR COMMITMENTS</p>
+          <h2>CUCの5つのこだわり</h2>
+
+          <div class="info-box">
+            <h3>01｜一杯ずつ丁寧に淹れるコーヒー</h3>
+            <p>
+              豆の個性に合わせて抽出方法を調整し、
+              香りや甘みを楽しめるコーヒーを提供。
+              苦味が強すぎない、毎日飲みたくなる味を大切にします。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>02｜店内で焼き上げる自家製スイーツ</h3>
+            <p>
+              パウンドケーキやスコーンは店内で少量ずつ焼き上げます。
+              素材の風味を生かし、コーヒーと一緒に楽しめる甘さに仕上げます。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>03｜自然素材を感じる空間</h3>
+            <p>
+              木目のテーブル、生成り色の壁、観葉植物を取り入れ、
+              落ち着いた空間を演出。自然光が入る窓際は、人気の特等席です。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>04｜毎日食べたくなるフード</h3>
+            <p>
+              野菜の食感や素材の組み合わせを大切にした
+              サンドイッチやプレートを用意。
+              軽い食事からしっかりしたランチまで選べます。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>05｜ひとりでも居心地のよい場所</h3>
+            <p>
+              カウンター席や一人用のテーブルを設置。
+              読書や短時間のパソコン作業にも利用しやすく、
+              誰もが気兼ねなく過ごせる雰囲気を大切にします。
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. 店内での過ごし方 -->
+        <section class="info-page-section" id="space">
+          <p class="info-page-label">03 / YOUR TIME</p>
+          <h2>店内での過ごし方</h2>
+
+          <p>
+            木目の家具や生成り色の壁、植物のある落ち着いた空間です。
+            カウンター席や窓際の席では、
+            読書や短時間の作業もお楽しみいただけます。
+          </p>
+        </section>
+
+        <!-- 4. 店内設備 -->
+        <section class="info-page-section" id="facilities">
+          <p class="info-page-label">04 / FACILITIES</p>
+          <h2>店内設備</h2>
+
+          <div class="info-box">
+            <h3>無料Wi-Fi</h3>
+            <p>
+              ご利用いただけます。
+              接続情報はレジ付近に掲示しています。
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>コンセント</h3>
+            <p>
+              カウンターの一部席にあります。
+              利用できる席はスタッフにお尋ねください。
+            </p>
+          </div>
+
+          <p>
+            通話やオンライン会議は周囲へのご配慮をお願いします。
+            混雑時は長時間のご利用をお控えいただく場合があります。
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">Cafe CUC</a>
+    <p>いつもの一日に、ひとさじの余白を。</p>
+
+    <div class="footer-links">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="access.html">ACCESS</a>
+      <a href="guide.html">GUIDE</a>
+    </div>
+
+    <small>※卒業研究用の架空のカフェです。</small>
+  </footer>
+</body>
+</html>

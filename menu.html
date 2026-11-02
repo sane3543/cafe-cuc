@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MENU | Cafe CUC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="design-switcher" aria-label="デザイン切り替え">
+      <span class="design-switcher__label">DESIGN</span>
+
+      <button type="button" data-style="botanical"
+              aria-pressed="false">
+        A｜ナチュラル
+      </button>
+
+      <button type="button" data-style="minimal"
+              aria-pressed="false">
+        B｜モダン
+      </button>
+
+      <button type="button" data-style="vintage"
+              aria-pressed="false">
+        C｜レトロ
+      </button>
+  </div>
+  <div class="layout-switcher" aria-label="情報配置の切り替え">
+    <span class="layout-switcher__label">LAYOUT</span>
+
+    <button
+      type="button"
+      data-layout="flow"
+      aria-pressed="false"
+    >
+      A｜順次探索
+    </button>
+
+    <button
+      type="button"
+      data-layout="categories"
+      aria-pressed="false"
+    >
+      B｜カテゴリ整理
+    </button>
+
+    <button
+      type="button"
+      data-layout="sidebar"
+      aria-pressed="false"
+    >
+      C｜常設ナビ
+    </button>
+  </div>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-icon">☕︎</span>
+    <span><strong>Cafe CUC</strong><small>COFFEE · UNWIND · COMFORT</small></span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false">MENU</button>
+  <nav class="site-nav">
+    <a href="index.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="about.html">ABOUT</a>
+    <a href="access.html">ACCESS</a>
+    <a href="guide.html">GUIDE</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">OUR MENU</p>
+    <h1>メニュー</h1>
+    <p>お気に入りの一杯と、今日のおいしいものを。</p>
+  </section>
+  <div class="menu-layout-shell">
+
+  <aside class="menu-sidebar" aria-label="メニューカテゴリー">
+    <p class="eyebrow">CATEGORY</p>
+    <nav class="menu-sidebar__nav">
+      <a href="#coffee">コーヒー</a>
+      <a href="#tea">ティー・その他</a>
+      <a href="#seasonal">季節限定</a>
+      <a href="#food">フード</a>
+      <a href="#sweets">スイーツ</a>
+      <a href="#sets">セット</a>
+    </nav>
+  </aside>
+ <div class="content menu-content">
+    <p class="eyebrow">CATEGORY</p>
+    <nav class="category-links" aria-label="メニューカテゴリー">
+      <a href="#coffee">コーヒー</a>
+      <a href="#tea">ティー・その他</a>
+      <a href="#seasonal">季節限定</a>
+      <a href="#food">フード</a>
+      <a href="#sweets">スイーツ</a>
+      <a href="#sets">セット</a>
+    </nav>
+
+    <!-- Coffee：drink1～drink6 -->
+    <h2 id="coffee">Coffee</h2>
+    <div class="menu-list">
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink1.png" alt="CUCブレンド" loading="lazy">
+        <div class="menu-item__info"><h3>CUCブレンド</h3><p>香ばしさとやさしい苦味。毎日の定番。</p><small>HOT / ICE</small></div>
+        <strong>¥480</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink2.png" alt="シングルオリジンコーヒー" loading="lazy">
+        <div class="menu-item__info"><h3>シングルオリジンコーヒー</h3><p>産地ごとの香りや酸味の違いを楽しめます。</p><small>HOT</small></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink3.png" alt="アイスコーヒー" loading="lazy">
+        <div class="menu-item__info"><h3>アイスコーヒー</h3><p>すっきりとした後味と豊かな香り。</p><small>ICE</small></div>
+        <strong>¥480</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink4.png" alt="カフェラテ" loading="lazy">
+        <div class="menu-item__info"><h3>カフェラテ</h3><p>エスプレッソとミルクのまろやかな味わい。</p><small>HOT / ICE</small></div>
+        <strong>¥550</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink5.png" alt="キャラメルラテ" loading="lazy">
+        <div class="menu-item__info"><h3>キャラメルラテ</h3><p>キャラメルの甘さが広がるラテ。</p><small>HOT / ICE</small></div>
+        <strong>¥620</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink6.png" alt="コーヒートニック" loading="lazy">
+        <div class="menu-item__info"><h3>コーヒートニック</h3><p>コーヒーとトニックの爽快な組み合わせ。</p><small>ICE・夏季限定</small></div>
+        <strong>¥600</strong>
+      </article>
+    </div>
+
+    <!-- Tea & Milk：drink7～drink19 -->
+    <h2 id="tea">Tea &amp; Milk</h2>
+    <div class="menu-list">
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink7.png" alt="抹茶ラテ" loading="lazy">
+        <div class="menu-item__info"><h3>抹茶ラテ</h3><p>抹茶のほろ苦さとミルクのコク。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink8.png" alt="スパイスチャイ" loading="lazy">
+        <div class="menu-item__info"><h3>スパイスチャイ</h3><p>シナモンなどが香るミルクティー。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink9.png" alt="クラシックココア" loading="lazy">
+        <div class="menu-item__info"><h3>クラシックココア</h3><p>カカオの風味とやさしい甘さ。</p></div>
+        <strong>¥550</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink10.png" alt="アールグレイティー" loading="lazy">
+        <div class="menu-item__info"><h3>アールグレイティー</h3><p>ベルガモットが香る紅茶。</p></div>
+        <strong>¥480</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink23.png" alt="ジャスミンティー" loading="lazy">
+        <div class="menu-item__info"><h3>ジャスミンティー</h3><p>花の香りでリラックス。</p></div>
+        <strong>¥480</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink11.png" alt="はちみつレモンティー" loading="lazy">
+        <div class="menu-item__info"><h3>はちみつレモンティー</h3><p>レモンとはちみつのまろやかな甘さ。</p></div>
+        <strong>¥520</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink12.png" alt="ミントハーブティー" loading="lazy">
+        <div class="menu-item__info"><h3>ミントハーブティー</h3><p>すっきりとした香りのハーブティー。</p></div>
+        <strong>¥520</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink13.png" alt="いちごミルク" loading="lazy">
+        <div class="menu-item__info"><h3>いちごミルク</h3><p>いちごの甘酸っぱさとミルク。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink21.png" alt="バナナミルク" loading="lazy">
+        <div class="menu-item__info"><h3>バナナミルク</h3><p>まろやかなバナナとミルク。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink14.png" alt="オレンジジュース" loading="lazy">
+        <div class="menu-item__info"><h3>オレンジジュース</h3><p>柑橘のさわやかな味わい。</p></div>
+        <strong>¥450</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink15.png" alt="自家製レモネード" loading="lazy">
+        <div class="menu-item__info"><h3>自家製レモネード</h3><p>レモンの風味を生かしたドリンク。</p></div>
+        <strong>¥550</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink16.png" alt="ブルーベリーヨーグルトスムージー" loading="lazy">
+        <div class="menu-item__info"><h3>ブルーベリーヨーグルトスムージー</h3><p>果実とヨーグルトのさっぱりした味わい。</p></div>
+        <strong>¥650</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink17.png" alt="ほうじ茶ラテ" loading="lazy">
+        <div class="menu-item__info"><h3>ほうじ茶ラテ</h3><p>香ばしいほうじ茶とミルク。</p></div>
+        <strong>¥580</strong>
+      </article>
+    </div>
+
+    <!-- Seasonal：drink20～drink23 -->
+    <h2 id="seasonal">Seasonal</h2>
+    <div class="menu-list">
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink19.png" alt="アップルシナモンティー" loading="lazy">
+        <div class="menu-item__info"><h3>アップルシナモンティー</h3><p>りんごとシナモンが香る季節の紅茶。</p><small>HOT・秋冬限定</small></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink20.png" alt="カボチャラテ" loading="lazy">
+        <div class="menu-item__info"><h3>カボチャラテ</h3><p>カボチャの甘みを楽しむラテ。</p><small>HOT・秋冬限定</small></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink22.png" alt="紫芋ラテ" loading="lazy">
+        <div class="menu-item__info"><h3>紫芋ラテ</h3><p>やさしい甘みとほっこりとした味わい。</p><small>HOT・秋冬限定</small></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/drink18.png" alt="ホワイトショコララテ" loading="lazy">
+        <div class="menu-item__info"><h3>ホワイトショコララテ</h3><p>ホワイトチョコのやわらかな甘さ。</p><small>冬季限定</small></div>
+        <strong>¥620</strong>
+      </article>
+    </div>
+
+    <div class="info-box">
+      <strong>ドリンクのカスタマイズ</strong>
+      <p>オーツミルク変更 +¥100（対象商品のみ）／エスプレッソ追加 +¥100／シロップ追加 +¥50／サイズアップ +¥100。</p>
+      <small>オーツミルクへの変更はアレルギー対応を保証するものではありません。</small>
+    </div>
+
+    <!-- Food：food1～food13 -->
+    <h2 id="food">フード</h2>
+    <div class="menu-list">
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food1.png" alt="はちみつバタートースト" loading="lazy">
+        <div class="menu-item__info"><h3>はちみつバタートースト</h3><p>バターとはちみつのシンプルなトースト。</p></div>
+        <strong>¥480</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food2.png" alt="アボカドエッグトースト" loading="lazy">
+        <div class="menu-item__info"><h3>アボカドエッグトースト</h3><p>アボカドと卵をのせたトースト。</p></div>
+        <strong>¥680</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food3.png" alt="季節のフルーツグラノーラ" loading="lazy">
+        <div class="menu-item__info"><h3>季節のフルーツグラノーラ</h3><p>グラノーラ、ヨーグルト、旬の果物。</p></div>
+        <strong>¥650</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food4.png" alt="ハムチーズホットサンド" loading="lazy">
+        <div class="menu-item__info"><h3>ハムチーズホットサンド</h3><p>ハムとチーズを香ばしく焼き上げました。</p></div>
+        <strong>¥680</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food5.png" alt="バタークロワッサン" loading="lazy">
+        <div class="menu-item__info"><h3>バタークロワッサン</h3><p>バターが香るサクサクのクロワッサン。</p></div>
+        <strong>¥350</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food6.png" alt="チキンとアボカドのサンド" loading="lazy">
+        <div class="menu-item__info"><h3>チキンとアボカドのサンド</h3><p>チキンとアボカドのサンドイッチ。</p></div>
+        <strong>¥850</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food7.png" alt="スモークサーモンサンド" loading="lazy">
+        <div class="menu-item__info"><h3>スモークサーモンサンド</h3><p>スモークサーモンと野菜のサンド。</p></div>
+        <strong>¥900</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food8.png" alt="彩り野菜のサンド" loading="lazy">
+        <div class="menu-item__info"><h3>彩り野菜のサンド</h3><p>野菜の食感と彩りを楽しむ一品。</p></div>
+        <strong>¥780</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food9.png" alt="ハーブチキンプレート" loading="lazy">
+        <div class="menu-item__info"><h3>ハーブチキンプレート</h3><p>ハーブチキンと季節の付け合わせ。</p></div>
+        <strong>¥1,180</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food10.png" alt="ごろごろ野菜のカレー" loading="lazy">
+        <div class="menu-item__info"><h3>ごろごろ野菜のカレー</h3><p>野菜のうまみを楽しめるカレー。</p></div>
+        <strong>¥1,050</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food11.png" alt="きのこのクリームパスタ" loading="lazy">
+        <div class="menu-item__info"><h3>きのこのクリームパスタ</h3><p>きのこの香りとクリームソース。</p></div>
+        <strong>¥1,100</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food12.png" alt="ベーコンとほうれん草のキッシュ" loading="lazy">
+        <div class="menu-item__info"><h3>ベーコンとほうれん草のキッシュ</h3><p>ベーコンとほうれん草のキッシュ。</p></div>
+        <strong>¥750</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/food13.png" alt="トマトとモッツァレラのオープンサンド" loading="lazy">
+        <div class="menu-item__info"><h3>トマトとモッツァレラのオープンサンド</h3><p>トマトの酸味とチーズのコク。</p></div>
+        <strong>¥780</strong>
+      </article>
+    </div>
+
+    <!-- Sweets：sweets1～sweets7 -->
+    <h2 id="sweets">スイーツ</h2>
+    <div class="menu-list">
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets1.png" alt="ベイクドチーズケーキ" loading="lazy">
+        <div class="menu-item__info"><h3>ベイクドチーズケーキ</h3><p>コクのある定番ケーキ。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets2.png" alt="濃厚ガトーショコラ" loading="lazy">
+        <div class="menu-item__info"><h3>濃厚ガトーショコラ</h3><p>カカオの風味を楽しめる一切れ。</p></div>
+        <strong>¥600</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets3.png" alt="自家製レモンパウンドケーキ" loading="lazy">
+        <div class="menu-item__info"><h3>自家製レモンパウンドケーキ</h3><p>レモンが香るしっとりした焼き菓子。</p></div>
+        <strong>¥450</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets4.png" alt="プレーンスコーン" loading="lazy">
+        <div class="menu-item__info"><h3>プレーンスコーン</h3><p>コーヒーのおともにぴったり。</p></div>
+        <strong>¥380</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets5.png" alt="キャロットケーキ" loading="lazy">
+        <div class="menu-item__info"><h3>キャロットケーキ</h3><p>スパイスが香る手作りケーキ。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets6.png" alt="季節のフルーツタルト" loading="lazy">
+        <div class="menu-item__info"><h3>季節のフルーツタルト</h3><p>旬の果物を使った季節のタルト。</p></div>
+        <strong>¥650</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets7.png" alt="昔ながらの固めプリン" loading="lazy">
+        <div class="menu-item__info"><h3>昔ながらの固めプリン</h3><p>卵の風味とほろ苦いカラメル。</p></div>
+        <strong>¥480</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets8.png" alt="抹茶のシフォンケーキ" loading="lazy">
+        <div class="menu-item__info"><h3>抹茶のシフォンケーキ</h3><p>ふわふわ生地と和の味わい。</p></div>
+        <strong>¥580</strong>
+      </article>
+      <article class="menu-item">
+        <img class="menu-item__image" src="images/sweets9.png" alt="スフレパンケーキ" loading="lazy">
+        <div class="menu-item__info"><h3>スフレパンケーキ</h3><p>ふわしゅわ食感とたっぷりのメープルシロップを。</p></div>
+        <strong>¥980</strong>
+      </article>
+    </div>
+
+    <!-- Sets：set1～set5 -->
+    <h2 id="sets">セットメニュー</h2>
+    <div class="menu-list menu-list--sets">
+      <article class="menu-item menu-item--set">
+        <img class="menu-item__image" src="images/set1.png" alt="CUCモーニングセット" loading="lazy">
+        <div class="menu-item__info"><h3>CUCモーニングセット</h3><p>平日9:00〜11:00。はちみつバタートースト＋CUCブレンド。</p></div>
+        <strong>¥650〜</strong>
+      </article>
+      <article class="menu-item menu-item--set">
+        <img class="menu-item__image" src="images/set2.png" alt="サンドイッチセット" loading="lazy">
+        <div class="menu-item__info"><h3>サンドイッチセット</h3><p>対象サンドイッチ＋対象ドリンク。ドリンクが¥150引き。</p></div>
+        <strong>¥1,050〜</strong>
+      </article>
+      <article class="menu-item menu-item--set">
+        <img class="menu-item__image" src="images/set3.png" alt="ケーキ＆コーヒーセット" loading="lazy">
+        <div class="menu-item__info"><h3>ケーキ＆コーヒーセット</h3><p>ケーキ＋CUCブレンドまたはアールグレイ。通常合計より¥130引き。</p></div>
+        <strong>¥900〜</strong>
+      </article>
+      <article class="menu-item menu-item--set">
+        <img class="menu-item__image" src="images/set4.png" alt="CUCランチセット" loading="lazy">
+        <div class="menu-item__info"><h3>CUCランチセット</h3><p>対象ランチプレート＋対象ドリンク。11:00〜14:00。</p></div>
+        <strong>¥1,350〜</strong>
+      </article>
+      <article class="menu-item menu-item--set">
+        <img class="menu-item__image" src="images/set5.png" alt="おやつボックス" loading="lazy">
+        <div class="menu-item__info"><h3>おやつボックス</h3><p>その日の焼き菓子3種類の詰め合わせ。テイクアウト用。</p></div>
+        <strong>¥900</strong>
+      </article>
+    </div>
+
+    <p class="menu-note">※手作りのため、商品によっては売り切れとなる場合があります。アレルギー情報はスタッフにお尋ねください。</p>
+  </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <a class="footer-brand" href="index.html">Cafe CUC</a>
+  <p>いつもの一日に、ひとさじの余白を。</p>
+  <div class="footer-links">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="access.html">ACCESS</a>
+    <a href="guide.html">GUIDE</a>
+  </div>
+  <small>※卒業研究用の架空のカフェです。</small>
+</footer>
+</body>
+</html>
